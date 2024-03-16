@@ -356,14 +356,21 @@
     (uuid d151fea5-359a-485f-a1e5-0027ae4c029f)
   )
 
-  (no_connect (at 187.96 76.2) (uuid 0c6cfe93-98a1-4620-8582-c86c5de1eb8a))
   (no_connect (at 162.56 86.36) (uuid 0fa3201d-d9c6-49b9-9a04-622ab429a3ab))
   (no_connect (at 124.46 81.28) (uuid 226aa4d1-7810-4526-8eb5-b15c5a13369e))
   (no_connect (at 142.24 101.6) (uuid 5b1a5734-ee50-4ecb-9ea7-4a3e475920e8))
   (no_connect (at 162.56 88.9) (uuid 715070d0-6a5a-4337-b86d-f537908386c4))
+  (no_connect (at 210.82 76.2) (uuid 917a1823-83f4-4a5b-a1f2-9656d0b625bc))
   (no_connect (at 162.56 83.82) (uuid a1813a67-de67-46ba-bea0-563d07764ce3))
+  (no_connect (at 210.82 73.66) (uuid a958f71d-045b-435f-b0b1-e1ee935deb86))
+  (no_connect (at 210.82 71.12) (uuid b3433854-b2e6-44c6-a2c9-9c781ef470f1))
   (no_connect (at 124.46 91.44) (uuid bbed18a9-8c1f-469c-b4a1-81d2b64f95ec))
+  (no_connect (at 210.82 68.58) (uuid c70b08ad-421f-4a35-ba0d-ce4271d9d53f))
 
+  (wire (pts (xy 187.96 76.2) (xy 187.96 81.28))
+    (stroke (width 0) (type default))
+    (uuid 0cff940e-ca2b-4235-be29-51de7f6c3929)
+  )
   (wire (pts (xy 87.63 76.2) (xy 124.46 76.2))
     (stroke (width 0) (type default))
     (uuid 11954d54-f433-4a2f-b60e-f410ac102bf2)
@@ -733,6 +740,49 @@
       (project "IMU_BMI088"
         (path "/6dc614db-ec47-403a-a60b-436d28a59059"
           (reference "C2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 187.96 81.28 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 68f6e653-d238-47d1-ae04-2b73275b7901)
+    (property "Reference" "#PWR03" (at 187.96 87.63 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 187.96 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 187.96 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 187.96 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c2e31a8f-5b73-4b02-b47b-89938a59828b))
+    (instances
+      (project "Flight_Computer_V2"
+        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
+          (reference "#PWR03") (unit 1)
+        )
+        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/d063216e-e605-415c-b172-b63dbdfef200"
+          (reference "#PWR050") (unit 1)
+        )
+      )
+      (project "STM32F405RGT6"
+        (path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
+          (reference "#PWR03") (unit 1)
+        )
+      )
+      (project "IMU_BMI088"
+        (path "/6dc614db-ec47-403a-a60b-436d28a59059"
+          (reference "#PWR011") (unit 1)
+        )
+      )
+      (project "avionics_flight_computer"
+        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
+          (reference "#PWR03") (unit 1)
         )
       )
     )
