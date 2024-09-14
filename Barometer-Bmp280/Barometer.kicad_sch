@@ -1,1155 +1,3714 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 7f3991ce-16d8-4280-80b6-77a7b05059d0)
-
-  (paper "A4")
-
-  (title_block
-    (title "BMP280 Barometer")
-    (rev "1")
-    (company "USST Avionics")
-    (comment 1 "Edited: Bristine")
-    (comment 2 "Created: Ven")
-  )
-
-  (lib_symbols
-    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -0.762)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 0.762)
-            (xy 2.032 0.762)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Jumper:SolderJumper_3_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "JP" (at -2.54 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SolderJumper_3_Open" (at 0 2.794 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "Solder Jumper SPDT" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Solder Jumper, 3-pole, open" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SolderJumper*Open*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SolderJumper_3_Open_0_1"
-        (arc (start -1.016 1.016) (mid -2.0276 0) (end -1.016 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start -1.016 1.016) (mid -2.0276 0) (end -1.016 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start -0.508 1.016) (end 0.508 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -2.032 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.016 1.016)
-            (xy -1.016 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 1.016)
-            (xy 1.016 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 0)
-            (xy 2.032 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 1.016 -1.016) (mid 2.0276 0) (end 1.016 1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 1.016 -1.016) (mid 2.0276 0) (end 1.016 1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "SolderJumper_3_Open_1_1"
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.54)
-          (name "C" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "B" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "M80-8770405:M80-8770405" (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 19.05 7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "M80-8770405" (at 19.05 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "M808770405" (at 19.05 -94.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Datasheet" "https://cdn.harwin.com/pdfs/M80-877.pdf" (at 19.05 -194.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Height" "5.56" (at 19.05 -394.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Name" "Harwin" (at 19.05 -494.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Manufacturer_Part_Number" "M80-8770405" (at 19.05 -594.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Part Number" "855-M80-8770405" (at 19.05 -694.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M80-8770405?qs=3tymCvhQ29ZPq83M%252Bf8kIA%3D%3D" (at 19.05 -794.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Part Number" "" (at 19.05 -894.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "Arrow Price/Stock" "" (at 19.05 -994.92 0)
-        (effects (font (size 1.27 1.27)) (justify left top) hide)
-      )
-      (property "ki_description" "Datamate L-Tek SIL Male Vertical 3mm Throughboard Connector, latched, gold, 4 contacts" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "M80-8770405_1_1"
-        (rectangle (start 5.08 2.54) (end 17.78 -10.16)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 0) (length 5.08)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 0) (length 5.08)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 0) (length 5.08)
-          (name "4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 22.86 0 180) (length 5.08)
-          (name "MH1" (effects (font (size 1.27 1.27))))
-          (number "MH1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 22.86 -2.54 180) (length 5.08)
-          (name "MH2" (effects (font (size 1.27 1.27))))
-          (number "MH2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 22.86 -5.08 180) (length 5.08)
-          (name "MH3" (effects (font (size 1.27 1.27))))
-          (number "MH3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 22.86 -7.62 180) (length 5.08)
-          (name "MH4" (effects (font (size 1.27 1.27))))
-          (number "MH4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Sensor_Pressure:BMP280" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -7.62 10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Value" "BMP280" (at 5.08 10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" (at 0 -17.78 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "I2C, SPI, pressure, temperature, sensor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Absolute Barometric Pressure Sensor, LGA-8" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Bosch*LGA*2x2.5mm*P0.65mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "BMP280_0_1"
-        (rectangle (start -7.62 -5.08) (end 5.08 7.62)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "BMP280_1_1"
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -10.16 -2.54 0) (length 2.54)
-          (name "CSB" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -10.16 2.54 0) (length 2.54)
-          (name "SDI" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -10.16 5.08 0) (length 2.54)
-          (name "SCK" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at -10.16 0 0) (length 2.54)
-          (name "SDO" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 10.16 270) (length 2.54)
-          (name "VDDIO" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 2.54 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 2.54 10.16 270) (length 2.54)
-          (name "VDD" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3.3V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3.3V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3.3V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 171.45 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid 09e96395-a77d-4f99-a7c6-df835ae97284)
-  )
-  (junction (at 123.19 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid 260422f1-520a-4686-9f75-077f97d56dce)
-  )
-  (junction (at 128.27 105.41) (diameter 0) (color 0 0 0 0)
-    (uuid 8f84629a-6948-492b-a8f9-8893bc743058)
-  )
-  (junction (at 107.95 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid a7bed29d-5adf-4505-aa52-b95233f9289f)
-  )
-  (junction (at 107.95 119.38) (diameter 0) (color 0 0 0 0)
-    (uuid cf6b75ef-8d51-4de9-9121-04de3d190e8c)
-  )
-  (junction (at 110.49 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid f2d33cd6-94b6-476c-aa9a-2c81f101d041)
-  )
-
-  (no_connect (at 209.55 107.95) (uuid 6b78fee0-9151-4727-adee-74d5f67eb57c))
-  (no_connect (at 209.55 110.49) (uuid 7510ac5b-27f3-4d1d-8c8b-37ee74e5ebe2))
-  (no_connect (at 209.55 105.41) (uuid cc3b48a0-1cd6-4c9d-9f24-93aac3ba3d5f))
-  (no_connect (at 209.55 102.87) (uuid f9e9901c-7a76-4e18-acfb-25ae9bc87407))
-
-  (wire (pts (xy 179.07 105.41) (xy 186.69 105.41))
-    (stroke (width 0) (type default))
-    (uuid 07bdd429-4023-4f7a-82c4-92f46a350c2d)
-  )
-  (wire (pts (xy 123.19 101.6) (xy 123.19 105.41))
-    (stroke (width 0) (type default))
-    (uuid 0af60f66-fff8-407a-a8bd-59d1ddd8935e)
-  )
-  (wire (pts (xy 171.45 105.41) (xy 171.45 93.98))
-    (stroke (width 0) (type default))
-    (uuid 0bf09222-2093-450f-b8c6-0e8a7e195022)
-  )
-  (wire (pts (xy 97.79 120.65) (xy 67.31 120.65))
-    (stroke (width 0) (type default))
-    (uuid 317d644e-6ec3-4a39-b1d3-6d067665ea8d)
-  )
-  (wire (pts (xy 123.19 93.98) (xy 135.89 93.98))
-    (stroke (width 0) (type default))
-    (uuid 31eafb49-4d9c-43a2-a634-ac8aafc2b582)
-  )
-  (wire (pts (xy 181.61 93.98) (xy 181.61 102.87))
-    (stroke (width 0) (type default))
-    (uuid 45a84fd2-4de3-4788-bf08-65c1b0dd915b)
-  )
-  (wire (pts (xy 161.29 107.95) (xy 161.29 93.98))
-    (stroke (width 0) (type default))
-    (uuid 46ca711e-5ca8-464e-9003-3bc480416973)
-  )
-  (wire (pts (xy 85.09 114.3) (xy 85.09 115.57))
-    (stroke (width 0) (type default))
-    (uuid 4e4f95b4-7595-46e1-b87f-4b9b78554900)
-  )
-  (wire (pts (xy 97.79 111.76) (xy 97.79 120.65))
-    (stroke (width 0) (type default))
-    (uuid 5b9e4cc0-da0c-4c86-9e8e-b4a27664e388)
-  )
-  (wire (pts (xy 85.09 102.87) (xy 85.09 104.14))
-    (stroke (width 0) (type default))
-    (uuid 60c79809-d720-45b4-b289-351123e5b751)
-  )
-  (wire (pts (xy 88.9 109.22) (xy 97.79 109.22))
-    (stroke (width 0) (type default))
-    (uuid 69032b73-cb4a-4070-abba-65c61be4e5b9)
-  )
-  (wire (pts (xy 110.49 93.98) (xy 110.49 99.06))
-    (stroke (width 0) (type default))
-    (uuid 7195aae7-b656-4691-a691-813ff980bbe4)
-  )
-  (wire (pts (xy 107.95 93.98) (xy 110.49 93.98))
-    (stroke (width 0) (type default))
-    (uuid 796e43e4-21a6-4d2b-986e-89d6c15624de)
-  )
-  (wire (pts (xy 161.29 93.98) (xy 171.45 93.98))
-    (stroke (width 0) (type default))
-    (uuid 838fcef4-08c3-48a8-bae2-ea58c962a4d6)
-  )
-  (wire (pts (xy 168.91 107.95) (xy 186.69 107.95))
-    (stroke (width 0) (type default))
-    (uuid 87415edf-3da0-4f41-a260-04ac6e9a5050)
-  )
-  (wire (pts (xy 123.19 105.41) (xy 128.27 105.41))
-    (stroke (width 0) (type default))
-    (uuid 8ef171c6-4f47-4b0b-b5d9-7e4776b96243)
-  )
-  (wire (pts (xy 107.95 116.84) (xy 107.95 119.38))
-    (stroke (width 0) (type default))
-    (uuid 975fa781-2bf9-43f2-a67c-941129a97139)
-  )
-  (wire (pts (xy 181.61 102.87) (xy 186.69 102.87))
-    (stroke (width 0) (type default))
-    (uuid a17fc023-4417-4d4d-88f5-91579cc85c08)
-  )
-  (wire (pts (xy 90.17 106.68) (xy 97.79 106.68))
-    (stroke (width 0) (type default))
-    (uuid a34ad716-b20e-48f4-9cf6-c8de6b08b7a0)
-  )
-  (wire (pts (xy 128.27 105.41) (xy 135.89 105.41))
-    (stroke (width 0) (type default))
-    (uuid a6880a71-b85d-47d9-b108-70ee2ad29389)
-  )
-  (wire (pts (xy 110.49 116.84) (xy 110.49 119.38))
-    (stroke (width 0) (type default))
-    (uuid ac56cc31-0277-484a-9483-2e543c7da285)
-  )
-  (wire (pts (xy 67.31 93.98) (xy 107.95 93.98))
-    (stroke (width 0) (type default))
-    (uuid baee8606-bd41-4794-8c19-344e3e15051a)
-  )
-  (wire (pts (xy 110.49 119.38) (xy 107.95 119.38))
-    (stroke (width 0) (type default))
-    (uuid bd099ccf-5d0c-4d25-b231-62a6cf9a489d)
-  )
-  (wire (pts (xy 67.31 120.65) (xy 67.31 93.98))
-    (stroke (width 0) (type default))
-    (uuid c3504184-b27c-400d-b262-838178ff0c53)
-  )
-  (wire (pts (xy 181.61 110.49) (xy 186.69 110.49))
-    (stroke (width 0) (type default))
-    (uuid c847c877-de01-49f9-936d-2e77c23b0b4f)
-  )
-  (wire (pts (xy 171.45 93.98) (xy 181.61 93.98))
-    (stroke (width 0) (type default))
-    (uuid d40b8ccc-a9c1-459c-9edc-cc8711eaa105)
-  )
-  (wire (pts (xy 90.17 104.14) (xy 97.79 104.14))
-    (stroke (width 0) (type default))
-    (uuid d57e47f0-da0c-48df-841e-56aed17204ef)
-  )
-  (wire (pts (xy 135.89 105.41) (xy 135.89 101.6))
-    (stroke (width 0) (type default))
-    (uuid d6dc05f3-d959-4805-8956-5ec8d07648ab)
-  )
-  (wire (pts (xy 110.49 93.98) (xy 123.19 93.98))
-    (stroke (width 0) (type default))
-    (uuid da50a802-3e57-4b84-80bc-e4591a31cfbe)
-  )
-  (wire (pts (xy 107.95 99.06) (xy 107.95 93.98))
-    (stroke (width 0) (type default))
-    (uuid df3e535f-62b7-4e1c-b18e-0117709db601)
-  )
-  (wire (pts (xy 110.49 87.63) (xy 110.49 93.98))
-    (stroke (width 0) (type default))
-    (uuid e7714830-92f0-4524-bbc6-60f06aecd45c)
-  )
-
-  (label "SCL" (at 90.17 104.14 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 17abe613-2713-451d-b855-77b6cabec57a)
-  )
-  (label "SDA" (at 90.17 106.68 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 2007e8b2-fe94-4898-9a1a-646cafdb375b)
-  )
-  (label "SCL" (at 181.61 105.41 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4d0ffe36-7e4b-48fb-ac99-81a81df83d6e)
-  )
-  (label "SDA" (at 181.61 107.95 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d14dd82f-2eb1-4f01-8b3f-964010266890)
-  )
-
-  (symbol (lib_id "Device:C") (at 135.89 97.79 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 07875138-013a-401b-915c-1fc9f0714553)
-    (property "Reference" "C18" (at 139.7 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 139.7 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 136.8552 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 135.89 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 60eb9a83-b65c-47c3-aca3-527fff566ae6))
-    (pin "2" (uuid 866eb175-0eca-45b2-8e65-5921e54c4489))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "C18") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "C2") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "C18") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 110.49 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1e7f707f-4da2-4f82-ab6d-a31bd1f948e8)
-    (property "Reference" "#PWR0109" (at 110.49 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 110.49 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 110.49 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 110.49 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd92bd59-da59-4b71-8420-a67e2867fb3e))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "#PWR0109") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
-          (reference "#PWR021") (unit 1)
-        )
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 123.19 97.79 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2506d4dd-725b-4e1e-8c51-62988d2aeaa4)
-    (property "Reference" "C17" (at 127 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100nF" (at 127 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 124.1552 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 123.19 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c8dbf145-e4ae-4bfb-9f5a-d7d20f3961e2))
-    (pin "2" (uuid 3798ec9e-6928-48f3-8847-84c256c9851f))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "C17") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "C1") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "C17") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 171.45 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3b8d59d8-2dbb-4528-acfc-0cee46f969d9)
-    (property "Reference" "#PWR019" (at 171.45 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 171.45 90.17 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 171.45 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 171.45 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 86a1a28e-49c3-4caf-b181-c97dd0ae8c79))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
-          (reference "#PWR019") (unit 1)
-        )
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "STM32F405RGT6"
-        (path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Jumper:SolderJumper_3_Open") (at 85.09 109.22 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3bfef1e5-5770-4deb-81c0-0ad1e9c52421)
-    (property "Reference" "JP1" (at 88.9 115.57 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SolderJumper_3_Open" (at 78.74 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" (at 85.09 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 85.09 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 22beb10b-c293-44ce-8ab7-5b21c22cf9ba))
-    (pin "2" (uuid feab25a2-3326-40a6-bb75-017801fb2015))
-    (pin "3" (uuid f7609c0f-831b-4482-a9a0-4ac13bccff12))
-    (instances
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "JP1") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "JP1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 165.1 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 473f66dc-c5e7-4acb-a6c9-7e42ec3746b4)
-    (property "Reference" "R1" (at 165.1 101.6 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1.5k" (at 165.1 104.14 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (at 165.1 109.728 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 165.1 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2801521f-062f-4f5e-85bc-159556341f23))
-    (pin "2" (uuid b219abca-0e93-4089-80e4-7ebf650b3fcf))
-    (instances
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Sensor_Pressure:BMP280") (at 107.95 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 663c4e94-a209-442b-948f-1c4bfb75bf3b)
-    (property "Reference" "U44" (at 114.3 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "BMP280" (at 114.3 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" (at 107.95 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" (at 107.95 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 72310b12-10b7-4ee1-bff0-9cb6d6fbde20))
-    (pin "2" (uuid b3e37e96-b526-49ec-bc97-d52ba947b3e8))
-    (pin "3" (uuid 69ac9bed-131d-4cc2-aeab-27f7daceba81))
-    (pin "4" (uuid 2513ae30-562f-4898-b9f9-427c75eca796))
-    (pin "5" (uuid 372fa27a-f3ef-4b8c-b6ca-12f265c92c4b))
-    (pin "6" (uuid 5d18d00a-5bdf-43b2-a8fc-a904c51096f9))
-    (pin "7" (uuid b8d57865-8e28-4744-8e1c-166089778010))
-    (pin "8" (uuid 3847f54e-406d-49b8-9a86-0afab41e9b7d))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "U44") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "U1") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "U4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 107.95 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7f52e911-d36f-4215-8c6c-02434e605949)
-    (property "Reference" "#PWR0110" (at 107.95 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 107.95 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 107.95 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 107.95 119.38 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6760f5d8-5eeb-4fb2-8b55-a51c2875ecf7))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "#PWR0110") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "#PWR023") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 85.09 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c1abac87-ed6b-40f5-be60-90daf4eec724)
-    (property "Reference" "#PWR019" (at 85.09 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 85.09 99.06 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 85.09 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 85.09 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e81fe578-b6f1-47c4-861a-d79382117715))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
-          (reference "#PWR019") (unit 1)
-        )
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
-          (reference "#PWR012") (unit 1)
-        )
-      )
-      (project "STM32F405RGT6"
-        (path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR08") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
-          (reference "#PWR019") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 128.27 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d241ff4b-7665-4937-9209-24627d928efb)
-    (property "Reference" "#PWR0111" (at 128.27 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 128.27 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 128.27 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 128.27 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4a955a47-2635-45b2-825a-9d1585dbd7d6))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
-          (reference "#PWR0111") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "M80-8770405:M80-8770405") (at 186.69 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e07f8e71-4b7c-4952-b541-4d98a5919b5f)
-    (property "Reference" "J1" (at 198.12 95.25 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "M80-8770405" (at 198.12 97.79 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "M808770405" (at 205.74 197.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Datasheet" "https://cdn.harwin.com/pdfs/M80-877.pdf" (at 205.74 297.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Height" "5.56" (at 205.74 497.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Name" "Harwin" (at 205.74 597.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Manufacturer_Part_Number" "M80-8770405" (at 205.74 697.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Part Number" "855-M80-8770405" (at 205.74 797.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Harwin/M80-8770405?qs=3tymCvhQ29ZPq83M%252Bf8kIA%3D%3D" (at 205.74 897.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Part Number" "" (at 205.74 997.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (property "Arrow Price/Stock" "" (at 205.74 1097.79 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "1" (uuid 1ffdf46e-d45f-49fc-ad53-baeebc69e310))
-    (pin "2" (uuid bc0be60c-5498-4aa0-ac6e-7e6857487458))
-    (pin "3" (uuid 96865070-288d-4a4e-8513-e45d3173ba10))
-    (pin "4" (uuid 6457298d-a592-4bd2-899e-8c4380e07531))
-    (pin "MH1" (uuid 6e380065-6078-4f5c-b235-95b2c9be7e9c))
-    (pin "MH2" (uuid 1229dd2f-3057-41e8-8f53-e1462511aee4))
-    (pin "MH3" (uuid 617729b8-5b73-4524-a82b-8c3de39ec3a5))
-    (pin "MH4" (uuid f06ba7f9-610a-4c94-8ba2-f669af978cc6))
-    (instances
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "J1") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 181.61 110.49 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e10115ea-fe42-4a7f-9290-a697df4a0acc)
-    (property "Reference" "#PWR06" (at 181.61 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 182.88 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 181.61 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 181.61 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3157a3c6-e3bd-4b69-b648-e5a4f9a86407))
-    (instances
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 85.09 115.57 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e4381286-ef3e-4e2b-a1a9-e31db13b2ea3)
-    (property "Reference" "#PWR03" (at 85.09 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 85.09 119.38 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 85.09 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 85.09 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dede138f-871f-40ae-8119-1b3e903c3aad))
-    (instances
-      (project "Flight_Computer_V2"
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
-          (reference "#PWR03") (unit 1)
-        )
-        (path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "STM32F405RGT6"
-        (path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "avionics_flight_computer"
-        (path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 175.26 105.41 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f5aa3bb5-6ba5-4551-8331-2aaa244a6469)
-    (property "Reference" "R2" (at 175.26 99.06 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1.5k" (at 175.26 101.6 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" (at 175.26 107.188 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 175.26 105.41 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 76b94459-6d45-4bff-82f7-74f66a114caf))
-    (pin "2" (uuid 9cc8ec15-bd6c-481c-b665-36bf3ea1db05))
-    (instances
-      (project "Barometer"
-        (path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
-          (reference "R2") (unit 1)
-        )
-      )
-      (project "Accelerometer"
-        (path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7f3991ce-16d8-4280-80b6-77a7b05059d0")
+	(paper "A4")
+	(title_block
+		(title "BMP280 Barometer")
+		(rev "1")
+		(company "USST Avionics")
+		(comment 1 "Edited: Bristine")
+		(comment 2 "Created: Ven")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Harwin-M80-8770422:M80-8770422"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "M80-8770422"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "CONN_M80-87704_HRW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "M80-8770422"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "M80-8770422"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CONN_M80-87704_HRW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "M80-8770422_1_1"
+				(polyline
+					(pts
+						(xy 5.08 -10.16) (xy 12.7 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -8.4667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -6.7733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -10.16) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "M80-8770422_1_2"
+				(polyline
+					(pts
+						(xy 5.08 -10.16) (xy 12.7 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 8.89 -8.4667)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 8.89 -6.7733)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.89 0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -10.16) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:SolderJumper_3_Open"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_3_Open"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 3-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Solder Jumper SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_3_Open_0_1"
+				(arc
+					(start -1.016 1.016)
+					(mid -2.0276 0)
+					(end -1.016 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.016 1.016)
+					(mid -2.0276 0)
+					(end -1.016 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 1.016)
+					(end 0.508 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.016) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 -1.016)
+					(mid 2.0276 0)
+					(end 1.016 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 -1.016)
+					(mid 2.0276 0)
+					(end 1.016 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor_Pressure:BMP280"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "BMP280"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Absolute Barometric Pressure Sensor, LGA-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "I2C, SPI, pressure, temperature, sensor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Bosch*LGA*2x2.5mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BMP280_0_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 5.08 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "BMP280_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 10.16 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3.3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 171.45 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09e96395-a77d-4f99-a7c6-df835ae97284")
+	)
+	(junction
+		(at 123.19 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "260422f1-520a-4686-9f75-077f97d56dce")
+	)
+	(junction
+		(at 229.87 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ded4836-87f5-4240-913b-50f53e67c11e")
+	)
+	(junction
+		(at 229.87 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68b38822-a04b-411f-bf47-344f7f887832")
+	)
+	(junction
+		(at 128.27 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f84629a-6948-492b-a8f9-8893bc743058")
+	)
+	(junction
+		(at 107.95 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7bed29d-5adf-4505-aa52-b95233f9289f")
+	)
+	(junction
+		(at 107.95 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf6b75ef-8d51-4de9-9121-04de3d190e8c")
+	)
+	(junction
+		(at 110.49 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2d33cd6-94b6-476c-aa9a-2c81f101d041")
+	)
+	(wire
+		(pts
+			(xy 179.07 105.41) (xy 186.69 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07bdd429-4023-4f7a-82c4-92f46a350c2d")
+	)
+	(wire
+		(pts
+			(xy 123.19 101.6) (xy 123.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af60f66-fff8-407a-a8bd-59d1ddd8935e")
+	)
+	(wire
+		(pts
+			(xy 171.45 105.41) (xy 171.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf09222-2093-450f-b8c6-0e8a7e195022")
+	)
+	(wire
+		(pts
+			(xy 97.79 120.65) (xy 67.31 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "317d644e-6ec3-4a39-b1d3-6d067665ea8d")
+	)
+	(wire
+		(pts
+			(xy 123.19 93.98) (xy 135.89 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31eafb49-4d9c-43a2-a634-ac8aafc2b582")
+	)
+	(wire
+		(pts
+			(xy 181.61 93.98) (xy 181.61 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45a84fd2-4de3-4788-bf08-65c1b0dd915b")
+	)
+	(wire
+		(pts
+			(xy 161.29 107.95) (xy 161.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46ca711e-5ca8-464e-9003-3bc480416973")
+	)
+	(wire
+		(pts
+			(xy 215.9 92.71) (xy 215.9 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47f72124-23fc-467b-99f6-a3a41eb0a8c6")
+	)
+	(wire
+		(pts
+			(xy 242.57 92.71) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c8da2a5-9ceb-4d28-8cd5-c2718e7926a6")
+	)
+	(wire
+		(pts
+			(xy 85.09 114.3) (xy 85.09 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e4f95b4-7595-46e1-b87f-4b9b78554900")
+	)
+	(wire
+		(pts
+			(xy 97.79 111.76) (xy 97.79 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b9e4cc0-da0c-4c86-9e8e-b4a27664e388")
+	)
+	(wire
+		(pts
+			(xy 85.09 102.87) (xy 85.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60c79809-d720-45b4-b289-351123e5b751")
+	)
+	(wire
+		(pts
+			(xy 88.9 109.22) (xy 97.79 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69032b73-cb4a-4070-abba-65c61be4e5b9")
+	)
+	(wire
+		(pts
+			(xy 110.49 93.98) (xy 110.49 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7195aae7-b656-4691-a691-813ff980bbe4")
+	)
+	(wire
+		(pts
+			(xy 107.95 93.98) (xy 110.49 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796e43e4-21a6-4d2b-986e-89d6c15624de")
+	)
+	(wire
+		(pts
+			(xy 161.29 93.98) (xy 171.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "838fcef4-08c3-48a8-bae2-ea58c962a4d6")
+	)
+	(wire
+		(pts
+			(xy 168.91 107.95) (xy 186.69 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87415edf-3da0-4f41-a260-04ac6e9a5050")
+	)
+	(wire
+		(pts
+			(xy 242.57 102.87) (xy 242.57 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a1e3dc4-e408-4ac8-891f-59c8a7c0b998")
+	)
+	(wire
+		(pts
+			(xy 123.19 105.41) (xy 128.27 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef171c6-4f47-4b0b-b5d9-7e4776b96243")
+	)
+	(wire
+		(pts
+			(xy 107.95 116.84) (xy 107.95 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "975fa781-2bf9-43f2-a67c-941129a97139")
+	)
+	(wire
+		(pts
+			(xy 215.9 101.6) (xy 215.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e454fbf-472c-4aac-ac66-711900fd33ac")
+	)
+	(wire
+		(pts
+			(xy 181.61 102.87) (xy 186.69 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17fc023-4417-4d4d-88f5-91579cc85c08")
+	)
+	(wire
+		(pts
+			(xy 90.17 106.68) (xy 97.79 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34ad716-b20e-48f4-9cf6-c8de6b08b7a0")
+	)
+	(wire
+		(pts
+			(xy 128.27 105.41) (xy 135.89 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6880a71-b85d-47d9-b108-70ee2ad29389")
+	)
+	(wire
+		(pts
+			(xy 110.49 116.84) (xy 110.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac56cc31-0277-484a-9483-2e543c7da285")
+	)
+	(wire
+		(pts
+			(xy 215.9 102.87) (xy 229.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b401f76f-9d2d-4559-a1aa-72ecae1b3335")
+	)
+	(wire
+		(pts
+			(xy 229.87 93.98) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82980d1-ea03-4e99-ae79-274eccf9e461")
+	)
+	(wire
+		(pts
+			(xy 67.31 93.98) (xy 107.95 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baee8606-bd41-4794-8c19-344e3e15051a")
+	)
+	(wire
+		(pts
+			(xy 110.49 119.38) (xy 107.95 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd099ccf-5d0c-4d25-b231-62a6cf9a489d")
+	)
+	(wire
+		(pts
+			(xy 67.31 120.65) (xy 67.31 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3504184-b27c-400d-b262-838178ff0c53")
+	)
+	(wire
+		(pts
+			(xy 181.61 110.49) (xy 186.69 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c847c877-de01-49f9-936d-2e77c23b0b4f")
+	)
+	(wire
+		(pts
+			(xy 171.45 93.98) (xy 181.61 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d40b8ccc-a9c1-459c-9edc-cc8711eaa105")
+	)
+	(wire
+		(pts
+			(xy 90.17 104.14) (xy 97.79 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57e47f0-da0c-48df-841e-56aed17204ef")
+	)
+	(wire
+		(pts
+			(xy 135.89 105.41) (xy 135.89 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6dc05f3-d959-4805-8956-5ec8d07648ab")
+	)
+	(wire
+		(pts
+			(xy 110.49 93.98) (xy 123.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da50a802-3e57-4b84-80bc-e4591a31cfbe")
+	)
+	(wire
+		(pts
+			(xy 107.95 99.06) (xy 107.95 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df3e535f-62b7-4e1c-b18e-0117709db601")
+	)
+	(wire
+		(pts
+			(xy 110.49 87.63) (xy 110.49 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7714830-92f0-4524-bbc6-60f06aecd45c")
+	)
+	(wire
+		(pts
+			(xy 215.9 93.98) (xy 229.87 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f5cdc1-f1bc-47bc-b0a5-4e56d4c97e43")
+	)
+	(wire
+		(pts
+			(xy 229.87 102.87) (xy 242.57 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f269e3b5-781b-41b0-ac4a-3fd73cbf3890")
+	)
+	(label "SCL"
+		(at 90.17 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17abe613-2713-451d-b855-77b6cabec57a")
+	)
+	(label "SDA"
+		(at 90.17 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2007e8b2-fe94-4898-9a1a-646cafdb375b")
+	)
+	(label "SCL"
+		(at 181.61 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d0ffe36-7e4b-48fb-ac99-81a81df83d6e")
+	)
+	(label "SDA"
+		(at 181.61 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d14dd82f-2eb1-4f01-8b3f-964010266890")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 135.89 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07875138-013a-401b-915c-1fc9f0714553")
+		(property "Reference" "C18"
+			(at 139.7 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 136.8552 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60eb9a83-b65c-47c3-aca3-527fff566ae6")
+		)
+		(pin "2"
+			(uuid "866eb175-0eca-45b2-8e65-5921e54c4489")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 215.9 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1174db37-bef2-4e83-b9ca-814854c0cbda")
+		(property "Reference" "H1"
+			(at 218.44 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 218.44 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M1.6_H1mm_9774010633"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 215.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "507fc889-157d-4348-937e-17762aa77fbd")
+		)
+		(instances
+			(project ""
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 110.49 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e7f707f-4da2-4f82-ab6d-a31bd1f948e8")
+		(property "Reference" "#PWR0109"
+			(at 110.49 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 110.49 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd92bd59-da59-4b71-8420-a67e2867fb3e")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
+					(reference "#PWR021")
+					(unit 1)
+				)
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2506d4dd-725b-4e1e-8c51-62988d2aeaa4")
+		(property "Reference" "C17"
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 127 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 124.1552 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8dbf145-e4ae-4bfb-9f5a-d7d20f3961e2")
+		)
+		(pin "2"
+			(uuid "3798ec9e-6928-48f3-8847-84c256c9851f")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c4074fb-2457-462a-8719-f360d6c61c2c")
+		(property "Reference" "#PWR01"
+			(at 229.87 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e70453e-3cda-40ef-b53b-3784be289da3")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 242.57 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2efc3c7a-783c-48a1-a604-c0c5f354d4aa")
+		(property "Reference" "H3"
+			(at 245.11 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 245.11 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M1.6_H1mm_9774010633"
+			(at 242.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 242.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b4c046e-74c0-4a29-a587-f118f0a3ccc7")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 171.45 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b8d59d8-2dbb-4528-acfc-0cee46f969d9")
+		(property "Reference" "#PWR019"
+			(at 171.45 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 171.45 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86a1a28e-49c3-4caf-b181-c97dd0ae8c79")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
+					(reference "#PWR019")
+					(unit 1)
+				)
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "STM32F405RGT6"
+				(path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 85.09 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bfef1e5-5770-4deb-81c0-0ad1e9c52421")
+		(property "Reference" "JP1"
+			(at 88.9 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 78.74 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+			(at 85.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22beb10b-c293-44ce-8ab7-5b21c22cf9ba")
+		)
+		(pin "2"
+			(uuid "feab25a2-3326-40a6-bb75-017801fb2015")
+		)
+		(pin "3"
+			(uuid "f7609c0f-831b-4482-a9a0-4ac13bccff12")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 107.95 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "473f66dc-c5e7-4acb-a6c9-7e42ec3746b4")
+		(property "Reference" "R1"
+			(at 165.1 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 165.1 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 165.1 109.728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2801521f-062f-4f5e-85bc-159556341f23")
+		)
+		(pin "2"
+			(uuid "b219abca-0e93-4089-80e4-7ebf650b3fcf")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Pressure:BMP280")
+		(at 107.95 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "663c4e94-a209-442b-948f-1c4bfb75bf3b")
+		(property "Reference" "U44"
+			(at 114.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BMP280"
+			(at 114.3 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf"
+			(at 107.95 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72310b12-10b7-4ee1-bff0-9cb6d6fbde20")
+		)
+		(pin "2"
+			(uuid "b3e37e96-b526-49ec-bc97-d52ba947b3e8")
+		)
+		(pin "3"
+			(uuid "69ac9bed-131d-4cc2-aeab-27f7daceba81")
+		)
+		(pin "4"
+			(uuid "2513ae30-562f-4898-b9f9-427c75eca796")
+		)
+		(pin "5"
+			(uuid "372fa27a-f3ef-4b8c-b6ca-12f265c92c4b")
+		)
+		(pin "6"
+			(uuid "5d18d00a-5bdf-43b2-a8fc-a904c51096f9")
+		)
+		(pin "7"
+			(uuid "b8d57865-8e28-4744-8e1c-166089778010")
+		)
+		(pin "8"
+			(uuid "3847f54e-406d-49b8-9a86-0afab41e9b7d")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "U44")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f52e911-d36f-4215-8c6c-02434e605949")
+		(property "Reference" "#PWR0110"
+			(at 107.95 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6760f5d8-5eeb-4fb2-8b55-a51c2875ecf7")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95eb6113-7c9c-4ded-bd97-11dac7115513")
+		(property "Reference" "#PWR09"
+			(at 229.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1aa12345-94d8-48c4-b6eb-fb6063e88f4a")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 242.57 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9a7edec-4229-4bfc-8f57-ce2ab099325a")
+		(property "Reference" "H4"
+			(at 245.11 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 245.11 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M1.6_H1mm_9774010633"
+			(at 242.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 242.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36c53951-53c4-417b-aec7-e06313190447")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 85.09 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1abac87-ed6b-40f5-be60-90daf4eec724")
+		(property "Reference" "#PWR019"
+			(at 85.09 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 85.09 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e81fe578-b6f1-47c4-861a-d79382117715")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
+					(reference "#PWR019")
+					(unit 1)
+				)
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+			(project "STM32F405RGT6"
+				(path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d241ff4b-7665-4937-9209-24627d928efb")
+		(property "Reference" "#PWR0111"
+			(at 128.27 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a955a47-2635-45b2-825a-9d1585dbd7d6")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/b1bb6dfd-0d07-44b6-b0d1-16713468007b"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/69efb283-841e-4331-9a86-1fe2d1492264"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 215.9 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d893bf1b-e81b-4fa4-bb88-5f24a0daabbc")
+		(property "Reference" "H2"
+			(at 218.44 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 216.9623 99.7425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M1.6_H1mm_9774010633"
+			(at 215.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 215.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b73bcd5-0631-432a-80bf-f58dc27cb003")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 181.61 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e10115ea-fe42-4a7f-9290-a697df4a0acc")
+		(property "Reference" "#PWR06"
+			(at 181.61 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3157a3c6-e3bd-4b69-b648-e5a4f9a86407")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4381286-ef3e-4e2b-a1a9-e31db13b2ea3")
+		(property "Reference" "#PWR03"
+			(at 85.09 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dede138f-871f-40ae-8119-1b3e903c3aad")
+		)
+		(instances
+			(project "Flight_Computer_V2"
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/4a05f57f-ad7d-4317-b08f-5601038a99f3"
+					(reference "#PWR03")
+					(unit 1)
+				)
+				(path "/39d7ebb3-b69d-4ae9-8f55-c9acfe77d345/cb37c924-4cb5-4f3b-a39d-3b8b1b5d4537"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+			(project "STM32F405RGT6"
+				(path "/6135eb53-87c0-4516-a6dc-aa2a3e58fdeb"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+			(project "avionics_flight_computer"
+				(path "/b1d299c5-d712-4abd-abfc-85bf9dc0241e/1d0982b1-a7f8-42e4-83d7-31334d6351d0"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Harwin-M80-8770422:M80-8770422")
+		(at 186.69 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec803f8c-c13e-41aa-b330-9782d8a7f7b5")
+		(property "Reference" "J2"
+			(at 200.66 105.4099 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M80-8770422"
+			(at 200.66 107.9499 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Harwin-M80-8770422:CONN_M80-87704_HRW"
+			(at 186.69 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "M80-8770422"
+			(at 186.69 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4e906c8c-2437-4c2c-87a3-d69e639e49b9")
+		)
+		(pin "3"
+			(uuid "64cc98e9-4eac-4fd8-a28b-008b2eb14ed2")
+		)
+		(pin "1"
+			(uuid "ac557841-8282-46b2-961d-c0e002a4e5ad")
+		)
+		(pin "2"
+			(uuid "4268e501-92b7-495b-b8f9-64af7bdb914f")
+		)
+		(instances
+			(project ""
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 175.26 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5aa3bb5-6ba5-4551-8331-2aaa244a6469")
+		(property "Reference" "R2"
+			(at 175.26 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 175.26 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 175.26 107.188 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76b94459-6d45-4bff-82f7-74f66a114caf")
+		)
+		(pin "2"
+			(uuid "9cc8ec15-bd6c-481c-b665-36bf3ea1db05")
+		)
+		(instances
+			(project "Barometer"
+				(path "/7f3991ce-16d8-4280-80b6-77a7b05059d0"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "Accelerometer"
+				(path "/baa7c496-f9b6-450a-bc65-b627fb8a9223"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
